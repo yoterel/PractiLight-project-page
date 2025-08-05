@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="PractiLight: Practical Light Control Using Foundational Diffusion Models">
+  <meta property="og:title" content="PractiLight: Practical Light Control Using Foundational Diffusion Models" />
+  <meta property="og:description" content="PractiLight: Practical Light Control Using Foundational Diffusion Models" />
+  <meta property="og:url" content="https://github.com/yoterel/PractiLight" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/banner.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Relight, Image Generation, Image Editing, Light Control">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>PractiLight: Practical Light Control Using Foundational Diffusion Models</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">PractiLight: Practical Light Control Using Foundational Diffusion Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://yoterel.github.io/" target="_blank">Yotam Erel</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://rishabhdabral.github.io/" target="_blank">Rishabh Dabral</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://people.mpi-inf.mpg.de/~golyanik/" target="_blank">Vladislav
+                  Golyanik</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank">Amit H. Bermano</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://people.mpi-inf.mpg.de/~theobalt/" target="_blank">Christian
+                  Theobalt</a><sup>2</sup></span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Tel Aviv University <sup>2</sup>MPI for Informatics</span>
+              <!--<span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>-->
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Supplementary PDF link -->
+                <span class="link-block">
+                  <a href="static/pdfs/PractiLight_supp.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/yoterel/PractiLight" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <!-- Your video here -->
+          <source src="static/videos/PractiLight_video.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Short video showing our work.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Light control in generated images is a difficult task, posing specific challenges,
+              spanning over the entire image and frequency spectrum. Most approaches
+              tackle this problem by training on extensive yet domain-specific datasets,
+              limiting the inherent generalization and applicability of the foundational
+              backbones used. Instead, PractiLight is a practical approach, effectively
+              leveraging foundational understanding of recent generative models for the
+              task. Our key insight is that lighting relationships in an image are similar
+              in nature to token interaction in self-attention layers, and hence are best
+              represented there. Based on this and other analyses regarding the importance
+              of early diffusion iterations, PractiLight trains a lightweight LoRA regressor
+              to produce the direct light map for a given image, using a small set of training
+              images. We then employ this regressor to incorporate the desired lighting
+              into the generation process of another image using Classifier Guidance. This
+              careful design generalizes well to diverse conditions and image domains. We
+              demonstrate state-of-the-art performance in terms of quality and control
+              with proven parameter and data efficiency compared to leading works over
+              a wide variety of scene types. We hope this work affirms that image lighting
+              can feasibly be controlled by tapping into foundational knowledge, enabling
+              practical and general relighting.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+  <section class="section hero is-small">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <div class="content">
+            <h2 class="title is-3">In a nutshell</h2>
+            Our main observation is that large diffusion models understand light transport pretty well, there is no need to finetune them over millions of images to achieve plausible relighting. To tap into this prior, we just need to carefully consider where (layers) and when (timesteps) to add guidance.
+            This allows us to train a tiny regressor on a small-scale synthetic dataset to extract the direct-irradiance map, and use it to guide the generation process into relighting images with pretty dramatic effects, while perserving the identity and style of the original image.
+            Our method allows for relighting results on a wide range of image domains, with very little additional compute and no specialized or large-scale data.
+            <!-- <img src="static/images/zoo.png" alt="example results" class="center-image" /> -->
+          </div>
+
+            <div style="display: grid; grid-template-columns: auto repeat(8, 1fr); gap: 4px; align-items: center; text-align: center;">
+
+              <!-- Row 1 -->
+              <div style="font-weight: bold; padding: 4px;">Original</div>
+              <div><img src="static/images/orig/0003_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/orig/0025_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/orig/0053_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/orig/0069_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/orig/0098_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/orig/0102_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/orig/0104_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/orig/0112_0000_0000.png" style="width: 100%; display: block;"></div>
+
+              <!-- Row 2 -->
+              <div style="font-weight: bold; padding: 4px;">Control</div>
+              <div><img src="static/images/control/0003_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/control/0025_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/control/0053_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/control/0069_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/control/0098_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/control/0102_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/control/0104_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/control/0112_0000_0000.png" style="width: 100%; display: block;"></div>
+
+              <!-- Row 3 -->
+              <div style="font-weight: bold; padding: 4px;">Relit</div>
+              <div><img src="static/images/ours/0003_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/ours/0025_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/ours/0053_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/ours/0069_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/ours/0098_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/ours/0102_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/ours/0104_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/ours/0112_0000_0000.png" style="width: 100%; display: block;"></div>
+
+            </div>
+            <br><br>
+            <div style="display: grid; grid-template-columns: auto repeat(8, 1fr); gap: 4px; align-items: center; text-align: center;">
+
+              <!-- Row 1 -->
+              <div style="font-weight: bold; padding: 4px;">Original</div>
+              <div><img src="static/images/orig/0123_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/orig/0130_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/orig/0144_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/orig/0150_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/orig/0165_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/orig/0167_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/orig/0178_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/orig/0179_0000_0000.png" style="width: 100%; display: block;"></div>
+
+              <!-- Row 2 -->
+              <div style="font-weight: bold; padding: 4px;">Control</div>
+              <div><img src="static/images/control/0123_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/control/0130_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/control/0144_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/control/0150_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/control/0165_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/control/0167_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/control/0178_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/control/0179_0000_0000.png" style="width: 100%; display: block;"></div>
+              
+              <!-- Row 3 -->
+              <div style="font-weight: bold; padding: 4px;">Relit</div>
+              <div><img src="static/images/ours/0123_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/ours/0130_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/ours/0144_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/ours/0150_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/ours/0165_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/ours/0167_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/ours/0178_0000_0000.png" style="width: 100%; display: block;"></div>
+              <div><img src="static/images/ours/0179_0000_0000.png" style="width: 100%; display: block;"></div>
+
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+      </code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a>.
+              <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
