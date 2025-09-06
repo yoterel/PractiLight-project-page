@@ -266,7 +266,7 @@
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="content">
-            <h2 class="title is-3">Light Transport Analysis</h2>
+            <h2 class="title is-3">Light transport analysis</h2>
             To investigate which layers encode light transport phenomena, we conducted a feature injection experiment: activations from the generation of relit images were injected into the generation process of the original image (from the same scene).
             We found that light transport effects are predominantly encoded in the <b>self-attention layers</b>, particularly in the decoder of a UNet-based diffusion model (e.g., SD 1.5).
             This is not surprising — we speculate that the many-to-many interactions in self-attention resemble light transport interactions, making these layers a natural locus for encoding such effects. In this sense, self-attention may act as an inductive bias for modeling light transport.
@@ -291,6 +291,83 @@
       </div>
     </div>
   </section>
+  <!-- Image carousel -->
+  <section class="hero is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="content">
+        <h2 class="title is-3">More results on different image domains</h2>
+        </div>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/grids/Animals.png" alt="Overview" />
+            <h2 class="subtitle has-text-centered">
+              Animals
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/grids/Anime.png" alt="Pipeline" />
+            <h2 class="subtitle has-text-centered">
+              Anime
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/grids/Cartoon.png" alt="Physical Setup" />
+            <h2 class="subtitle has-text-centered">
+              Cartoon / Sketch
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/grids/Fantasy Landscape.png" alt="Physical Setup" />
+            <h2 class="subtitle has-text-centered">
+              Fantasy Landscape
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/grids/Indoors.png" alt="Physical Setup" />
+            <h2 class="subtitle has-text-centered">
+              Indoors
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/grids/Outdoors.png" alt="Physical Setup" />
+            <h2 class="subtitle has-text-centered">
+              Outdoors
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/grids/Paintings.png" alt="Physical Setup" />
+            <h2 class="subtitle has-text-centered">
+              Paintings
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/grids/Portrait CG.png" alt="Physical Setup" />
+            <h2 class="subtitle has-text-centered">
+              Portrait CG
+            </h2>
+          </div>
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/grids/Portrait.png" alt="Physical Setup" />
+            <h2 class="subtitle has-text-centered">
+              Portrait
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End image carousel -->
   <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
